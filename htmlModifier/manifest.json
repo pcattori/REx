@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+
+    "name": "HTML Mod", 
+    "description": "Modifies HTML of all webpages",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "html5.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["htmlMod.js"]
+        }
+    ]
+}
