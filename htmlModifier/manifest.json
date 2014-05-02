@@ -10,8 +10,7 @@
     "content_scripts": [
         {
             "matches": ["http://*/*", "https://*/*"],
-            "js": ["htmlMod.js"],
-            "run_at": "document_end"
+            "js": ["jquery-2.1.1.js",  "htmlMod.js"]
         }
     ]
 }
